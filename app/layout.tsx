@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from "@/app/theme";
+import { Box } from "@mui/material";
+import { WDXL_Lubrifont_TC } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const font = WDXL_Lubrifont_TC({
+  subsets: ['cyrillic'],
+  weight: ['400'],
+  display: 'swap',
+  style: ['normal'],
+  variable: '--font-wdxl-lubrifont-tc',
+  preload: true,
+  fallback: ['sans-serif'],
 });
 
 export const metadata: Metadata = {
@@ -23,10 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+    <html lang="ja">
+      <ThemeProvider theme={theme}>
+        <Box component="body" sx={{ backgroundColor: 'background.default', fontFamily: font.style.fontFamily }}>
+          {children}
+        </Box>
+      </ThemeProvider>
+
     </html>
   );
 }

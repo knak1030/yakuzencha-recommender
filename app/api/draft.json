@@ -1,0 +1,70 @@
+{
+  "tea": [
+    {
+      "name": "緑茶",
+      "property": "寒性",
+      "constitution": "陽熱・陰虚",
+      "season": "晩春から中秋"
+    },
+    {
+      "name": "ほうじ茶",
+      "property": "平性",
+      "constitution": "陽虚・気虚",
+      "season": "通年"
+    },
+    {
+      "name": "麦茶",
+      "property": "涼性",
+      "constitution": "陽熱・陰虚・気虚",
+      "season": "夏"
+    },
+    {
+      "name": "紅茶",
+      "property": "温性",
+      "constitution": "陽虚・瘀血・血虚・気虚・気滞",
+      "season": "通年"
+    },
+    {
+      "name": "烏龍茶",
+      "property": "涼性・平性",
+      "constitution": "陰虚・陽熱・水毒・瘀血",
+      "season": "通年"
+    },
+    {
+      "name": "コーヒー",
+      "property": "温性",
+      "constitution": "気滞・水毒・瘀血・陽虚",
+      "season": "通年"
+    },
+    {
+      "name": "杜仲茶",
+      "property": "温性",
+      "constitution": "陽虚・気虚",
+      "season": "春から冬"
+    },
+    {
+      "name": "ナツメ茶",
+      "property": "微温性",
+      "constitution": "気虚・血虚・陽虚",
+      "season": "通年"
+    },
+    {
+      "name": "生姜茶",
+      "property": "温性",
+      "constitution": "気滞・陽虚・気虚・水毒",
+      "season": "晩秋から初春"
+    },
+    {
+      "name": "ルイボスティー",
+      "property": "不明",
+      "constitution": "水毒・陽熱・陰虚",
+      "season": "晩春から中秋"
+    },
+    {
+      "name": "ミントティー",
+      "property": "涼性",
+      "constitution": "気滞・陽熱・陰虚・瘀血",
+      "season": "初夏から中秋"
+    }
+  ]
+}
