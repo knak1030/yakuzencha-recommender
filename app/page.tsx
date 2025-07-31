@@ -37,6 +37,7 @@ export default function Home() {
         <Tabs
           tab={tab}
           handleChangeTab={handleChangeTab}
+          hasResult={result.length > 0}
         />
 
         <TabPanel value={tab} index={0}>

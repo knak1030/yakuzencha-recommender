@@ -15,9 +15,10 @@ function a11yProps(index: TabKey) {
 type Props = {
   handleChangeTab: (event: React.SyntheticEvent, newValue: TabKey) => void;
   tab: TabKey;
+  hasResult?: boolean;
 }
 
-export default function Tabs({ handleChangeTab, tab }: Props) {
+export default function Tabs({ handleChangeTab, tab, hasResult }: Props) {
   return (
     <MuiTabs
       orientation="vertical"
@@ -34,7 +35,7 @@ export default function Tabs({ handleChangeTab, tab }: Props) {
       <Tab label={<ModeStandbyIcon />} {...a11yProps(0)} />
       <Tab label="体質" {...a11yProps(1)} />
       <Tab label="入力" {...a11yProps(2)} />
-      <Tab label={<FreeBreakfastIcon />} {...a11yProps(3)} />
+      <Tab disabled={!hasResult} label={<FreeBreakfastIcon />} {...a11yProps(3)} />
     </MuiTabs>
   )
 }
